@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oral Communication</title>
+   <link rel="stylesheet" href="CSS/subject.css">
+</head>
+<body>
+   <header>
+    <a href="Home.html"><img src="Pictures/logo.png" class="logo"></a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+    </header>
+
+  <div class="container">
+    <center> <h1>Oral Communication</h1> </center>
+    
+    <div class="tabs">
+      <div class="tab active" onclick="openTab('books')">Topics</div>
+      <div class="tab" onclick="openTab('magazines')">Modules</div>
+      <div class="tab" onclick="openTab('articles')">Videos</div>
+    </div>
+    
+    <div id="books" class="content active">
+       <h3> Nature and Elements of Communication </h3>
+      <p> 1. Definition <br>
+          - The exchange of information or passing of information, ideas or thought from one person to the other or from one end to the other is communication. According to McFarland communication is, “a process of meaningful interaction among human beings. <br><br>
+        2. The Process of Communication <br><br>
+        3. Communication Models <br>
+        4. Five Elements of Communication o Verbal and Non-Verbal Communication <br>
+        5. Effective Communication Skills <br>
+        6. Intercultural Communication</p>
+      <h3> Functions Of Communication </h3>
+      <p> 1. Regulation/Control <br>
+        2. Social Interaction <br>
+        3. Motivation <br>
+        4. Information <br>
+        5. Emotional Expression </p>
+      <h3> Communicative Competence Strategies In Various Speech Situations </h3>
+      <h4> A. Types of Speech context </h4>
+      <p> 1. Intrapersonal <br>
+        2. Interpersonal <br>
+          a. Dyad <br>
+          b. Small group <br>
+        3. Public <br> <br>
+        
+      <h4> B. Types of Speech Style </h4>
+      <p> 1. Intimate <br>
+        2. Casual <br>
+        3. Consultative <br>
+        4. Formal <br>
+        5. Frozen <br> <br>
+
+      <h4> C. Types of Speech Act </h4>
+      <p> 1. Locution (Utterance) <br>
+        2. Illocution (Intention) <br>
+        3. Perlocution (Response) <br> <br>
+
+      <h4> D. Types of Communicative Strategy </h4>
+      <p> 1. Nomination <br>
+        2. Restriction <br>
+        3. Turn-taking <br>
+        4. Topic control <br>
+        5. Topic shifting <br>
+        6. Repair <br>
+        7. Termination </p>
+      <h3> Types of Speeches </h3>
+      <h4> A. According to purpose </h4>
+      <p> o Expository/Informative Speech <br>
+        o Persuasive Speech <br>
+        o Entertainment Speech <br> <br>
+
+      <h4> B. According to delivery </h4>
+      <p> o Reading from a manuscript <br>
+        o Memorized Speech <br>
+        o Impromptu Speech <br>
+        o Extemporaneous Speech <br> <br>
+
+      <h4> C. Principles of Speech Writing </h4>
+      <p> o Choosing the Topic <br>
+        o Analyzing the Audience <br>
+        o Sourcing the Information <br>
+        o Outlining and Organizing the Speech Contents <br> <br>
+
+      <h4> D. Principles of Speech Delivery</h4>
+    </div>
+    
+    <div id="magazines" class="content">
+     <div class="row">
+      <div class="sch-selection">
+      <div class="links">
+        <h3> Midterm </h3>
+      <a href="Module Library/Oral Communication/OC_Q1_1.pdf" class="hero-btn2 red-btn"> Module 1: Functions, Nature and Process of Communication</a>
+      <a href="Module Library/Oral Communication/OC_Q1_2.pdf" class="hero-btn2 red-btn"> Module 2: Communication Models</a>
+      <a href="Module Library/Oral Communication/OC_Q1_3.pdf" class="hero-btn2 red-btn"> Module 3: Strategies to Avoid Communication Breakdown</a>
+      <a href="Module Library/Oral Communication/OC_Q1_4.pdf" class="hero-btn2 red-btn"> Module 4: Examining Oral CommunicationActivities Based on Functions of Communication and Usage of Verbal and Nonverbal Cues</a>
+      <a href="Module Library/Oral Communication/OC_Q1_5.pdf" class="hero-btn2 red-btn"> Module 5: Types of Speech Context</a>
+      <a href="Module Library/Oral Communication/OC_Q1_6.pdf" class="hero-btn2 red-btn"> Module 6: Types of Speeches and Speech Style</a>
+      <a href="Module Library/Oral Communication/OC_Q1_7.pdf" class="hero-btn2 red-btn"> Module 7: Types of Speech Act </a>
+    </div>
+    </div>
+      <div class="sch-selection">
+      <div class="links">
+            <h3> Finals </h3>
+      <a href="Module Library/Oral Communication/OC_Q2_1.pdf" class="hero-btn2 red-btn"> Module 1: Types of Communicative Strategy</a>
+      <a href="Module Library/Oral Communication/OC_Q2_2.pdf" class="hero-btn2 red-btn"> Module 2: Understanding Speech Context, Speech Style, Speech Act and Communicative Strategy</a>
+      <a href="Module Library/Oral Communication/OC_Q2_3.pdf" class="hero-btn2 red-btn"> Module 3: Principles of Effective Speech Writing and Delivery</a>
+   </div>
+ </div>
+</div>
+    </div>
+    
+    <div id="articles" class="content">
+     <div class="row">
+      <div class="sch-selection">
+      <div class="links">
+      <a href="videoplayback.html" class="hero-btn2 red-btn"> Oral Communication in Context: Quarter 1 Module 1- Functions, Nature and Process of Communication</a>
+    </div>
+  </div>
+</div>
+    </div>
+
+  <script>
+    // JavaScript function to switch between tabs
+    function openTab(tabName) {
+      var i, tabContent, tabLinks;
+      
+      // Hide all tab content
+      tabContent = document.getElementsByClassName('content');
+      for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = 'none';
+      }
+      
+      // Deactivate all tab links
+      tabLinks = document.getElementsByClassName('tab');
+      for (i = 0; i < tabLinks.length; i++) {
+        tabLinks[i].className = tabLinks[i].className.replace(' active', '');
+      }
+      
+      // Show the selected tab content and mark the tab as active
+      document.getElementById(tabName).style.display = 'block';
+      event.currentTarget.className += ' active';
+    }
+  </script>
+</body>
+</html>

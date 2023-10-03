@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Playback - School Library</title>
+     <link rel="stylesheet" href="CSS/videoplayback.css">
+</head>
+<body>
+     <header>
+    <a href="Home.html"><img src="Pictures/logo.png" class="logo"></a>
+    <ul>
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+    </header>
+  <div class="container">
+    <div class="video-player">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/jGtz8-blLgw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <h2 class="video-title">Oral Communication in Context: Quarter 1 Module 1- Functions, Nature and Process of Communication</h2>
+    
+    <p class="video-description">Source: Shennie Valerio</p>
+    
+    <div class="video-controls">
+      <button onclick="playVideo()">Play</button>
+      <button onclick="pauseVideo()">Pause</button>
+      <button onclick="stopVideo()">Stop</button>
+    </div>
+  </div>
+  
+  <script>
+    // JavaScript functions for video playback
+    var video = document.getElementsByTagName('iframe')[0];
+    
+    function playVideo() {
+      video.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+    }
+    
+    function pauseVideo() {
+      video.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    }
+    
+    function stopVideo() {
+      video.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+    }
+  </script>
+</body>
+</html>

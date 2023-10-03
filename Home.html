@@ -1,0 +1,106 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<title>HNHS: The Archives</title>
+ 	<link rel="stylesheet" href="CSS/main_style.css">
+ </head>
+ <body>
+ 	<section>
+         <div class="circle"></div>   
+         <nav id="navbar" class="navbar">
+ 		<header>
+ 		<a href="Home.html"><img src="Pictures/logo.png" class="logo"></a>
+ 		<ul>
+                        
+ 			<li><a href="Home.html">Home</a></li>
+ 			<li><button onclick="scrollToBottom()">Menu</button></li>
+ 			<li><a href="#">About Us</a></li>
+ 		</ul>
+ 		</header>
+        </nav>
+ 		<div class="content">
+ 			<div class="textBox">
+ 				<h2>Welcome to<br> <span>The Archives</span></h2>
+ 				<p>A Web-Based Digital School Library</p>
+ 				<button onclick="scrollToBottom()">Explore More</button>
+ 			</div>
+ 			<div class="imgBox">
+ 				<img src="Pictures/img1.png" class="starbucks">
+ 			</div>
+ 		</div>
+ 		<ul class="thumb">
+ 			<li><img src="Pictures/thumb1.png" onclick="imgSlider('Pictures/img1.png');changeCircleColor('#')"></li>
+ 			<li><img src="Pictures/thumb2.png" onclick="imgSlider('Pictures/img2.png');changeCircleColor('#')"></li>
+ 			<li><img src="Pictures/thumb3.png" onclick="imgSlider('Pictures/img3.png');changeCircleColor('#')"></li>
+ 		</ul>
+ 		<ul class="sci">
+ 			<li><a href="#"><img src="Pictures/facebook.png"></a></li>
+ 			<li><a href="#"><img src="Pictures/twitter.png"></a></li>
+ 			<li><a href="#"><img src="Pictures/instagram.png"></a></li>
+ 		</ul>
+ 	</section>
+        <section>
+        <div class="container">
+        <h2>Choose Which One to Open</h2>
+      <div class="card">
+        <img src="Pictures/img4.png" alt="Oral Communication">
+        <div class="card-body">
+          <h2>Learning Materials</h2>
+          <p>Collection of Educational Resources.</p>
+          <a href="Subject_Selection.html">View Collection</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Pictures/img5.png" alt="Non-Fiction">
+        <div class="card-body">
+          <h2>Strand Subjects</h2>
+          <p>Contains information for Senior High School Strands.</p>
+          <a href="Strand_Subjects.html">View Collection</a>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Pictures/img10.png" alt="Non-Fiction">
+        <div class="card-body">
+          <h2>Quiz!</h2>
+          <p>Have a Mini Quiz from the lessons you learned.</p>
+          <a href="quiz_selection.html">View Collection</a>
+        </div>
+      </div>   
+      <div class="card">
+        <img src="Pictures/img6.png" alt="Non-Fiction">
+        <div class="card-body">
+          <h2>Creator's Page</h2>
+          <p>Discover the creation of the Archives.</p>
+          <a href="non-fiction.html">View Collection</a>
+        </div>
+      </div>
+    </div>
+        </section>
+ 	<script type="text/javascript">
+ 		function imgSlider(anything){
+ 			document.querySelector('.starbucks').src = anything;
+ 		}
+
+ 		function changeCircleColor(color){
+ 			const circle = document.querySelector('.circle');
+ 			circle.style.background = color;
+ 		}
+                function scrollToBottom() {
+                        window.scrollTo({
+                         top: document.body.scrollHeight,
+                        behavior: 'smooth'
+  });
+}
+window.onscroll = function() { 
+  var navbar = document.getElementById("navbar");
+  if (window.pageYOffset > 0) {
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+  }
+};
+ 	</script>
+ </body>
+ </html>

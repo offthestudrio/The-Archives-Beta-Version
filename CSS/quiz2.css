@@ -1,0 +1,23 @@
+.quiz-container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#question {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#choices {
+  margin-bottom: 20px;
+}
+
+#results {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#submit-btn {
+  padding: 10px 20px;
+}

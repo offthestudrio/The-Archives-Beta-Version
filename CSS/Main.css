@@ -147,7 +147,7 @@ body{
 }
 
 .quiz_box{
-    width: 350px;
+    width: 300px;
     background: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
@@ -221,7 +221,7 @@ section{
 }
 
 section .que_text{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 600;
 }
 
@@ -423,7 +423,7 @@ footer button.show{
 }
 .start_info_box{
     height: 400px;
-    width: 400px;
+    width: 350px;
     background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9));
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
